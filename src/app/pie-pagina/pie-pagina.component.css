@@ -1,0 +1,20 @@
+.footer{
+    position:absolute;
+    bottom:1%;
+    height: 60px;
+    width: 100%;
+    }
+
+.colorp{
+    background-color: rgb(6 147 227);
+}
+
+.colorpd{
+    background-color: #F07E37;
+}
+
+.footerd{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+}

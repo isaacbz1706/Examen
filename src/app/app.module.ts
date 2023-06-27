@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LogginComponent } from './loggin/loggin.component';
 import { VistaComponent } from './vista/vista.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogginComponent,
     VistaComponent,
-    EncabezadoComponent
+    EncabezadoComponent,
+    PiePaginaComponent
   ],
   imports: [
     BrowserModule,
