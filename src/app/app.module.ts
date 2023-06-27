@@ -10,6 +10,9 @@ import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { ListProductsComponent } from './list-products/list-products.component';
 import { AddEditProductComponent } from './add-edit-product/add-edit-product.component';
 
+//Modulos
+import {ReactiveFormsModule} from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { AddEditProductComponent } from './add-edit-product/add-edit-product.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
