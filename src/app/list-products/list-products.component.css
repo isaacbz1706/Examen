@@ -1,0 +1,56 @@
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:  rgb(6 147 227);
+    border: none;
+    border-radius: 10px;
+    /*box-shadow: 0 9px #999;*/
+  }
+  
+  .button:hover {background-color:  rgb(6 147 227)}
+  
+  .button:active {
+    background-color:  rgb(6 147 227);
+    /*box-shadow: 0 5px #666;*/
+    transform: translateY(4px);
+  }
+/*------------------------*/
+.tittle{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+/*------------------------*/
+.buttonb {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:   #F07E37;
+  border: none;
+  border-radius: 10px;
+  /*box-shadow: 0 9px #999;*/
+}
+
+.button:hover {background-color:   #F07E37}
+
+.button:active {
+  background-color:   #F07E37;
+  /*box-shadow: 0 5px #666;*/
+  transform: translateY(4px);
+}
+/*------------------------*/
+.tabla{
+  background-color:  rgb(6 147 227);
+  
+}

@@ -7,6 +7,8 @@ import { LogginComponent } from './loggin/loggin.component';
 import { VistaComponent } from './vista/vista.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
+import { ListProductsComponent } from './list-products/list-products.component';
+import { AddEditProductComponent } from './add-edit-product/add-edit-product.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
     LogginComponent,
     VistaComponent,
     EncabezadoComponent,
-    PiePaginaComponent
+    PiePaginaComponent,
+    ListProductsComponent,
+    AddEditProductComponent
   ],
   imports: [
     BrowserModule,
