@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    background: #ecf0f3;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #bbd9f8, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 20px;
+  }
+  .custom-form input {
+    display: block;
+    margin: 0.5rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+        rgba(74, 151, 252, 0.692);
+    border: 0 none;
+    background: #ebf5fc;
+  }
