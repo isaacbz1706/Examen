@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LogginComponent } from './loggin/loggin.component';
+import { VistaComponent } from './vista/vista.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LogginComponent,
+    VistaComponent,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
