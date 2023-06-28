@@ -1,7 +1,7 @@
 <div class="row mt-1">
     <div class="col-lg-4 offset-lg-4">
         <div class="custom-form mb-3" style="max-width: 25rem;">
-            <div class="card-header text-center">Agregar producto</div>
+            <div class="card-header text-center" routerLink="add">Agregar producto</div>
             <div class="card-body">
                 <form [formGroup]="form" (ngSubmit)="addProduct()">
                     <input formControlName="name" type="text" class="form-control" placeholder="Nombre">
@@ -10,7 +10,7 @@
                     <input formControlName="price" type="number" class="form-control mt-2" placeholder="Precio">
                     <input formControlName="stock" type="number" class="form-control mt-2" placeholder="Stock">
                     <div class="row mt-2 text-center">
-                        <div class="col-lg-6"><button routerLink="/" type="button" class="btn btn-primary mt-2">Volver</button>
+                        <div class="col-lg-6"><button routerLink="principal" type="button" class="btn btn-primary mt-2">Volver</button>
                         </div>
                         <div class="col-lg-6"><button [disabled]="form.invalid" type="submit" class="btn btn-secondary mt-2">Aceptar</button>
                         </div>

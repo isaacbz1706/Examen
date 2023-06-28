@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pie-pagina.component.css']
 })
 export class PiePaginaComponent {
-  public autor:any={nombre:'Isaac', apellido:'Becerra'};
+  public autor:any={nombre:'Isaac', apellido:'Becerra Zamora'};
 }

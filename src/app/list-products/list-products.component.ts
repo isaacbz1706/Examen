@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../services/product.service';
+import { ToastrService } from 'ngx-toastr';
+import { ProductService } from 'src/app/services/product.service';
 import { Product } from '../vista/product';
 
 @Component({
@@ -8,17 +9,29 @@ import { Product } from '../vista/product';
   styleUrls: ['./list-products.component.css']
 })
 export class ListProductsComponent implements OnInit {
- listaProducts: Product[] = []
+  listProducts: Product[] = []
+  loading: boolean = false;
 
-   constructor(private _productService: ProductService){ }
+  constructor(private _productService: ProductService, private toastr: ToastrService) { }
 
-   ngOnInit(): void{
+  ngOnInit(): void {
     this.getListProducts();
-   }
+  }
 
-   getListProducts(){
-    this._productService.getProducts().subscribe((data)=>{
-  this.listaProducts = data;
+  getListProducts() {
+    this.loading = true;
+
+    this._productService.getListProducts().subscribe((data: Product[]) => {
+      this.listProducts = data;
+      this.loading = false;
+    })
+  }
+
+  deleteProduct(id: number) {
+    this.loading = true;
+    this._productService.deleteProduct(id).subscribe(() => {
+      this.getListProducts();
+      this.toastr.warning('El producto fue eliminado con exito', 'Producto eliminado');
     })
   }
 }

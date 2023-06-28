@@ -13,6 +13,10 @@ import { AddEditProductComponent } from './add-edit-product/add-edit-product.com
 //Modulos
 import {ReactiveFormsModule} from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,15 @@ import{HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    }),
+    CommonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
